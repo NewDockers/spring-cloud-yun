@@ -1,0 +1,4 @@
+
+spring:
+  profiles:
+    active: dev  #运行环境 + 命名空间名称
