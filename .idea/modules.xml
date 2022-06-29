@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-common/spring-cloud-common.iml" filepath="$PROJECT_DIR$/spring-cloud-common/spring-cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-system/spring-cloud-system.iml" filepath="$PROJECT_DIR$/spring-cloud-system/spring-cloud-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-yun.iml" filepath="$PROJECT_DIR$/spring-cloud-yun.iml" />
+    </modules>
+  </component>
+</project>

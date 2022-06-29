@@ -26,7 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e422533-1d50-4b15-9e77-9a3ace6511e9" name="Default Changelist" comment="" />
+    <list default="true" id="0e422533-1d50-4b15-9e77-9a3ace6511e9" name="Default Changelist" comment="SystemMapper中增加@Repository注解，消除引用的地方报错。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +127,7 @@
       <updated>1656054624505</updated>
       <workItem from="1656054629260" duration="20346000" />
       <workItem from="1656331847813" duration="2071000" />
-      <workItem from="1656515487844" duration="877000" />
+      <workItem from="1656515487844" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="SystemMapper中增加@Repository注解，消除引用的地方报错。">
       <created>1656516061828</created>
