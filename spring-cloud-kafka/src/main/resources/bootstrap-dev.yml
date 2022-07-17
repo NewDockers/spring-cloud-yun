@@ -1,0 +1,57 @@
+server:
+  port: 9005
+spring:
+  profiles: dev  #运行环境 + 命名空间名称
+  application:
+    name: spring-cloud-kafka   #唯一名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  #Nacos 链接地址
+        #          namespace: c60d2198-0b2f-46c1-82cb-4c2f20fb8123 #Nacos 命名空间ID
+        config:
+          server-addr: localhost:8848  #Nacos 链接地址
+          #          namespace: c60d2198-0b2f-46c1-82cb-4c2f20fb8123 #Nacos 命名空间ID
+          group: DEFAULT_GROUP  # 默认分组就是DEFAULT_GROUP，如果使用默认分组可以不配置
+          file-extension: yml   #默认properties
+  kafka:
+    bootstrap-servers: localhost:9092
+
+    producer:
+      # 应答级别:多少个分区副本备份完成时向生产者发送ack确认(可选0、1、all/-1)
+      acks: 1
+      # 批量大小
+      batch-size: 16384
+      # 生产端缓冲区大小
+      buffer-memory: 33554432
+      # Kafka提供的序列化和反序列化类
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # 重试次数
+      retries: 0
+    consumer:
+      # Kafka提供的序列化和反序列化类
+      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      #默认的消费者id
+      group-id: defaultConsumerGroup
+      #是否自动提交offset
+      enable-auto-commit: true
+
+      # 消费端监听的topic不存在时，项目启动会报错(关掉)
+      spring.kafka.listener.missing-topics-fatal: false
+
+      # 设置批量消费
+      # spring.kafka.listener.type: batch
+      # 批量消费每次最多消费多少条消息
+      # spring.kafka.consumer.max-poll-records: 50
+
+
+#    gateway:
+#      routes:
+#        - id: gateway
+#          uri: http://baidu.com
+#          predicates:
+#            - Path:/cloud-gateway-auth/api/**
+#          filters:
+#            - StripPrefix=1

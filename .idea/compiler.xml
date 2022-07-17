@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-kafka" />
         <module name="spring-cloud-common" />
         <module name="spring-cloud-system" />
         <module name="spring-cloud-gateway" />
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud-common" options="-parameters" />
       <module name="spring-cloud-gateway" options="-parameters" />
+      <module name="spring-cloud-kafka" options="-parameters" />
       <module name="spring-cloud-system" options="-parameters" />
       <module name="spring-cloud-yun" options="" />
     </option>

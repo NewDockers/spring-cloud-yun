@@ -12,6 +12,7 @@
         <module>spring-cloud-common</module>
         <module>spring-cloud-system</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-cloud-kafka</module>
     </modules>
 
     <!--父工程-->
