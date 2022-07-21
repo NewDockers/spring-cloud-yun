@@ -1,5 +1,6 @@
 package com.yun.system.controller;
 
+import com.yun.system.entity.SysUser;
 import com.yun.system.service.SystemService;
 import com.yun.system.util.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,9 +43,9 @@ public class SystemController {
     }
 
     @RequestMapping("/getToken")
-    public Result<?> getToken(HttpServletRequest request, HttpServletResponse response){
-        Result<?> token = systemService.getToken(request, response);
+    public Result getToken(HttpServletRequest request, HttpServletResponse response){
+        SysUser sysUser = systemService.getToken(request, response);
 
-        return token;
+        return Result.ok(sysUser);
     }
 }

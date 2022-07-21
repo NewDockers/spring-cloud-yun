@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/spring-cloud-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-sentinel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-system/src/main/resources" charset="UTF-8" />
   </component>

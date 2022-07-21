@@ -11,6 +11,7 @@
         <module name="spring-cloud-common" />
         <module name="spring-cloud-system" />
         <module name="spring-cloud-gateway" />
+        <module name="spring-cloud-sentinel" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +20,7 @@
       <module name="spring-cloud-common" options="-parameters" />
       <module name="spring-cloud-gateway" options="-parameters" />
       <module name="spring-cloud-kafka" options="-parameters" />
+      <module name="spring-cloud-sentinel" options="-parameters" />
       <module name="spring-cloud-system" options="-parameters" />
       <module name="spring-cloud-yun" options="" />
     </option>

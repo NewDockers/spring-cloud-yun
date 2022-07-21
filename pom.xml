@@ -13,6 +13,7 @@
         <module>spring-cloud-system</module>
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-kafka</module>
+        <module>spring-cloud-sentinel</module>
     </modules>
 
     <!--父工程-->

@@ -25,12 +25,12 @@ public class SystemServiceImpl extends ServiceImpl<SystemMapper, SysUser> implem
     private SystemMapper systemMapper;
 
     @Override
-    public Result<?> getToken(HttpServletRequest request, HttpServletResponse response) {
+    public SysUser getToken(HttpServletRequest request, HttpServletResponse response) {
         QueryWrapper<SysUser> userQueryWrapper = new QueryWrapper<>();
 
         userQueryWrapper.eq("username","小李");
         SysUser sysUser = systemMapper.selectOne(userQueryWrapper);
 
-        return Result.ok(sysUser);
+        return sysUser;
     }
 }

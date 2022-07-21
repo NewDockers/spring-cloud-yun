@@ -15,5 +15,5 @@ import javax.servlet.http.HttpServletResponse;
  * Version 1.0
  **/
 public interface SystemService extends IService<SysUser> {
-    Result<?> getToken(HttpServletRequest request, HttpServletResponse response);
+    SysUser getToken(HttpServletRequest request, HttpServletResponse response);
 }
