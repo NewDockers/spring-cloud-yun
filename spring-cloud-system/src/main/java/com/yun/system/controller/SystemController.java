@@ -1,5 +1,6 @@
 package com.yun.system.controller;
 
+import com.yun.system.api.SystemValid;
 import com.yun.system.entity.SysUser;
 import com.yun.system.service.SystemService;
 import com.yun.system.util.Result;
@@ -11,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,6 +29,9 @@ public class SystemController {
     private SystemService systemService;
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private List<SystemValid> valida;
 
     @RequestMapping("/login")
     public String login(){
@@ -46,6 +51,13 @@ public class SystemController {
     public Result getToken(HttpServletRequest request, HttpServletResponse response){
         SysUser sysUser = systemService.getToken(request, response);
 
+        return Result.ok(sysUser);
+    }
+
+    @RequestMapping("/valida")
+    public Result validas(HttpServletRequest request, HttpServletResponse response){
+        SysUser sysUser = systemService.getToken(request, response);
+        String parameter = request.getParameter("");
         return Result.ok(sysUser);
     }
 }
