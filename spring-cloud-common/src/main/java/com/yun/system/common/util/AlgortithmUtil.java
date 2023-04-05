@@ -2,7 +2,8 @@ package com.yun.system.common.util;
 
 /**
  * ClassName AlgortithmUtil
- * Description TODO
+ * Description TODO 算法类
+ * 主要有递归
  * Author zhonghaigang
  * Date 2023/3/26 22:27
  * Version 1.0
